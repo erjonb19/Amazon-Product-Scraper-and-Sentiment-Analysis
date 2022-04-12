@@ -8,11 +8,7 @@ A simple amazon scraper to extract product details and prices from Amazon.com us
 From a terminal 
 
 1. Clone this project  `https://github.com/erjonb19/Amazon_Monitor_Scraper`
-2. Install Requirements 
-`from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
-import pandas as pd
-import pyttsx3pip3`
+2. Install Requirements `selenium,webdriver,ChromeDriverManager,pandas,pyttsx3'
 
 # Scrape Products from Search Results
 
