@@ -1,22 +1,24 @@
 # Amazon_Scraper
 
-Given product url, this amazon scraper can scrape important details of a specific product. For this project we scrape different features of computer monitors to help consumers breakdown the many unique features of computer monitors.
+Given product url, this amazon scraper can scrape important details of a specific product. For this project we scrape different features of computer monitors to help consumers breakdown the many unique features of computer monitors. This project was done in a co
 
-A simple amazon scraper to extract product details and prices from Amazon.com using Python Requests and Selectorlib. 
+A simple amazon scraper to extract product details and prices from Amazon.com using Selenium Webdriver and Webdriver_manager. 
 
 
 From a terminal 
 
-1. Clone this project  `git clone https://github.com/scrapehero-code/amazon-scraper.git` and cd into it `cd amazon-scraper`
-1. Add a Virtual Environment `python3 -m venv .venv` (Optional)
-1. Activate the Virtual Environment `source .venv/bin/activate` (Optional) 
-1. Install Requirements `pip3 install -r requirements.txt`
+1. Clone this project  `https://github.com/erjonb19/Amazon_Monitor_Scraper`
+2. Install Requirements 
+`from selenium.webdriver.common.by import By
+from webdriver_manager.chrome import ChromeDriverManager
+import pandas as pd
+import pyttsx3pip3`
 
 # Scrape Products from Search Results
 
 This scraper can scrap as many pages as possible, scrapes were usually done at around 10-15 pages of products.
 
-1. Add Amazon Product URLS to [urls.txt](urls.txt)
+1. Add Amazon Product URLS to [search.url](search.url)
 1. Run `amazon_scraper.ipynb`
 1. Get data from [output.csv](output.csv)
 
