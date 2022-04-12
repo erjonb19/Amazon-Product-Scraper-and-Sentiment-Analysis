@@ -14,7 +14,7 @@ From a terminal
 
 This scraper can scrap as many pages as possible, scrapes were usually done at around 10-15 pages of products.
 
-1. Add Amazon Product URLS to [search.url](search.url)
+1. Add Amazon Product URL Page to [search.url](search.url)
 1. Run `amazon_scraper.ipynb`
 1. Get data from [output.csv](output.csv)
 
