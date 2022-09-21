@@ -1,6 +1,6 @@
 # Amazon_Scraper
 
-Given product url, this amazon scraper can scrape important details of a specific product. For this project we scrape different features of computer monitors to help consumers breakdown the many unique features of computer monitors. This project was done in a co
+Given product url, this amazon scraper can scrape important details of a specific product. For this project we scrape different features of computer monitors to help consumers breakdown the many unique features of computer monitors. Review information was also parsed to identify trends and similarities of postive reviews compared to negative reviews.
 
 A simple amazon scraper to extract product details and prices from Amazon.com using Selenium Webdriver and Webdriver_manager. 
 
