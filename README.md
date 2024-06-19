@@ -1,33 +1,37 @@
-# Amazon_Scraper
-
-Given product url, this amazon scraper can scrape important details of a specific product. For this project we scrape different features of computer monitors to help consumers breakdown the many unique features of computer monitors. Review information was also parsed to identify trends and similarities of postive reviews compared to negative reviews.
-
-A simple amazon scraper to extract product details and prices from Amazon.com using Selenium Webdriver and Webdriver_manager. 
+Explanation
+Imports:
 
 
-From a terminal 
 
-1. Clone this project  `https://github.com/erjonb19/Amazon_Monitor_Scraper`
-2. Install Requirements `selenium,webdriver,ChromeDriverManager,pandas,pyttsx3'
-
-# Scrape Products from Search Results
-
-This scraper can scrap as many pages as possible, scrapes were usually done at around 10-15 pages of products.
-
-1. Add Amazon Product URL Page to [search.url](search.url)
-1. Run `amazon_scraper.ipynb`
-1. Get data from [output.csv](output.csv)
+time for handling delays.
+requests for making HTTP requests.
+scrapy.Selector for parsing HTML content.
+pandas for data manipulation and saving to CSV.
+Base URL and Headers:
 
 
-## Example Data Format
 
-### Product Details
-```csv
-{
-Name:,Url:,Rating:,Ratings:,Price:,Display Size:,Refresh Rate:,Resolution:,Response Time:,Manufacturer:,Ports:,Curved:,Speakers:,Height Adjustable:
+Defined the Amazon UK base URL and HTTP headers to mimic a real browser request.
+Proxy Setup:
 
-1,"LG 34WP88C-B 34-inch Curved 21:9 UltraWide QHD (3440x1440) IPS Display with Ergo Stand (Extend/Retract/Swivel/Height/Tilt), USB Type C (90W Power delivery), DCI-P3 95% Color Gamut with HDR 10",https://www.amazon.com/LG-34WP88C-B-34-inch-Curved-UltraWide/dp/B09BP279HR/ref=sr_1_omk_4?crid=2HRQHDDQ8D5R0&keywords=computer+monitor&qid=1648946051&sprefix=computer+monitor%2Caps%2C192&sr=8-4,4.6 out of 5 stars,954,$799.99,34 inches,60 hertz,3440x1440,5 milliseconds,LG,Type-C,True,True,True
 
-2,"HP 23.8"" LED Backlit Monitor, Low Blue Light (V241ib, Black)",https://www.amazon.com/HP-Backlit-Monitor-Light-V241ib/dp/B09JL4W5CQ/ref=sr_1_5?crid=2HRQHDDQ8D5R0&keywords=computer+monitor&qid=1648946051&sprefix=computer+monitor%2Caps%2C192&sr=8-5,4.7 out of 5 stars,500,$164.99,23.8 inches,76 hertz,1920x1080,14 milliseconds,HP,HDMI,False,False,False
 
-}
+A list of proxy servers provided by Oxylabs to distribute requests and avoid IP bans.
+Data Collection:
+
+
+
+Loops through pages (1 to 20) and collects product information.
+Handles HTTP responses and parses HTML using Scrapy's Selector.
+Exception Handling:
+
+
+
+Catches and prints exceptions to ensure the scraper continues running even if an error occurs.
+Data Storage:
+
+
+
+Appends collected data into a list and saves it as a CSV file using Pandas.
+Contributing
+Feel free to submit pull requests or report issues. Contributions are welcome to improve the functionality and efficiency of this scraper.
