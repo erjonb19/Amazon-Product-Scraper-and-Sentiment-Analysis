@@ -6,7 +6,7 @@ import pandas as pd
 
 # Your proxies and headers are correctly defined here
 proxy_list = [
-    'http://customer-sakshipandey-cc-bd:mP_5GeK7RtM92a5@pr.oxylabs.io:7777'
+    'http://customer-erjonbrucaj-cc-bd:mP_5GeK7RtM92a5@pr.oxylabs.io:7777'
 ]
 
 headers = {
