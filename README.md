@@ -1,59 +1,92 @@
-Amazon Product Reviews Sentiment Analysis
-Overview
-This project aims to perform sentiment analysis on Amazon product reviews, specifically focusing on reviews for Amazon Alexa devices. Using the provided amazon_alexa.tsv data file, the analysis includes data preprocessing, sentiment analysis, and visualization of the results.
+# Amazon Headphones Scraper
 
 
 
-Features
-Data preprocessing to clean and prepare the review data.
-Sentiment analysis using natural language processing (NLP) techniques.
-Visualization of sentiment distribution and insights.
-Requirements
-Python 3.6+
-Pandas library
-NLTK (Natural Language Toolkit) library
-Matplotlib library
-Seaborn library
-Installation
-Clone the repository:
+This repository contains a web scraping script to extract information about headphones from Amazon UK. The script uses proxies and headers to avoid getting blocked, and it collects data such as product title, price, rating, review count, and product URL.
 
 
 
-
-Copy code
-git clone https://github.com/yourusername/amazon-reviews-sentiment-analysis.git
-cd amazon-reviews-sentiment-analysis
-Install the required Python packages:
+## Table of Contents
 
 
 
-Copy code
-Download the dataset:
-The dataset is available in the Github Repository.
+- [Installation](#installation)
+- [Usage](#usage)
+- [Output](#output)
+- [Contributing](#contributing)
+- [License](#license)
 
 
 
-Ensure the amazon_alexa.tsv file is correctly placed in the project directory.
-Run the Analysis:
+## Installation
 
 
 
-Copy code
-jupyter notebook sentiment_analysis.ipynb
-Open the Jupyter Notebook and run all cells to perform the sentiment analysis.
-Output:
+1. Clone the repository:
+```bash
+git clone https://github.com/erjonb19/amazon-headphones-scraper.git
+cd amazon-headphones-scraper
+```
 
 
 
-The notebook will generate visualizations and insights on the sentiment of the product reviews.
-Data Explanation
-Dataset: amazon_alexa.tsv
-The dataset contains reviews for Amazon Alexa devices with the following columns:
+2. Create a virtual environment and activate it:
+```bash
+python -m venv venv
+source venv/bin/activate # On Windows use venv\Scripts\activate
+```
 
 
 
-rating: The rating given by the user.
-date: The date of the review.
-variation: The variation of the product.
-verified_reviews: The text of the review.
-feedback: Whether the feedback was positive (1) or negative (0).
+3. Install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+
+
+## Usage
+
+
+
+1. Update the proxy list and headers in the script if needed:
+- The script uses Oxylabs proxies. Make sure your proxy details are correctly specified.
+- Headers are set to mimic a browser request.
+
+
+
+2. Run the scraper:
+```bash
+python scraper.py
+```
+- The script will scrape the first 19 pages of headphone search results from Amazon UK.
+- The extracted data will be saved to a CSV file named Products.csv.
+
+
+
+## Output
+
+
+
+The output CSV file (`Products.csv`) will have the following columns:
+- Product Title
+- Price
+- Rating
+- Review count
+- Product URL
+
+
+
+## Contributing
+
+
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+
+
+## License
+
+
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
