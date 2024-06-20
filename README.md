@@ -33,7 +33,7 @@ cd amazon-headphones-scraper
 2. Create a virtual environment and activate it:
 ```bash
 python -m venv venv
-source venv/bin/activate # On Windows use venv\Scripts\activate
+source venv/bin/activate # On Windows use venv\amazon-headphones-scraper\activate
 ```
 
 
