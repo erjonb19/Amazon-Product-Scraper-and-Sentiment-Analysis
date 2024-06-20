@@ -2,7 +2,7 @@
 
 
 
-This repository contains a web scraping script to extract information about headphones from Amazon UK. The script uses proxies and headers to avoid getting blocked, and it collects data such as product title, price, rating, review count, and product URL.
+This repository contains a web scraping script to extract information about headphones from Amazon. The script uses proxies and headers to avoid getting blocked, and it collects data such as product title, price, rating, review count, and product URL.
 
 
 
